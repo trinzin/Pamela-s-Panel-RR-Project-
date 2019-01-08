@@ -1,0 +1,9 @@
+<h1>Testing!!</h1>
+
+<div>
+    <% @post.each do |post| %>
+    <h2><%= post.title %> </h2>
+    <p><%= post.body %> </p>
+    <p> <b> Post by <%= post.username %> </b> </p>
+ <% end %>
+</div>
