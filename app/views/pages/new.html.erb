@@ -1,16 +1,16 @@
-<h1>Add Posts</h1>
+<h1>Add Students</h1>
 <%= form_for :pages, url: pages_path do|f| %>
     <p>
         <%= f.label :username %><br>
-        <%= f.text_field :username %>
+        <%= f.text_field(:username, {:class => 'form-control'}) %>
     </p>
 
     <p> 
         <%= f.label :password %><br>
-        <%= f.text_area :password %>
+        <%= f.text_area(:password,{:class => 'form-control'}) %>
     </p>
 
     <p>
-        <%=f.submit %>
+        <%=f.submit({:class => 'btn btn-primary'}) %>
         </p>
     <% end %>

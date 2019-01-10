@@ -1,4 +1,10 @@
 body{
-    background-image: url("/images/learn.jpeg");
-    background-size:cover
+    background-color: brown;
+    color:white;
+    font-family:verdana, Arial, Helvetica, sans-serif;
+    font-size:20px;
+    font-weight: bold;
+    line-height: 40px;
+    background-image: url("/assets/write.jpeg");
+    background-size:cover;
 }

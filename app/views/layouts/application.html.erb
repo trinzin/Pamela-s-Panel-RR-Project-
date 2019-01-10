@@ -1,15 +1,42 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Pamela's Rail</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <title>NYCDA 2.0</title>
+    <%= stylesheet_link_tag 'https://stackpath.bootstrapcdn.com/
+        bootstrap/4.2.1/css/bootstrap.min.css' %>
+    <%= stylesheet_link_tag 'application', media: 'all', '
+        data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application','
+        data-turbolinks-track' => true %>
+        <%= csrf_meta_tags %>
   </head>
 
   <body>
-    <%= yield %>
+
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed"
+    data-toggle="collapse" data-target="#navbar"
+    aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only"> <strong>Welcome To</strong></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href=""#>NYCDA 2.0</a>
+      </div>
+      <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+        <li><%= link_to "Home", home_path %></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to "Create Username", new_page_path %></li>
+      <ul>
+      </div><!--/nav-collapse-->
+      </div>
+      </nav>
+
+    <div class="container">
+      <%= yield %>
+  </div>
   </body>
 </html>
